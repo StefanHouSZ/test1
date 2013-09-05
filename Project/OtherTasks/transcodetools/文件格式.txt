@@ -1,0 +1,13 @@
+﻿AVI+立体声WAV
+AVI+单声道WAV
+MOV文件格式
+WMV文件格式
+PS文件格式
+TS文件格式
+ES文件格式
+MP4文件格式
+3GP文件格式
+FLV文件格式
+单文件MXF格式(0p1a)
+单音频文件的mxf格式(0p-atom)
+多音频文件MXF格式(0p-atom)

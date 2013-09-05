@@ -1,0 +1,55 @@
+﻿<------Apple YUV 8bit Encoder------>
+Apple YUV 8bit
+
+<------Apple YUV 10bit Encoder------>
+Apple YUV 10bit
+
+<------DV Encoder------>
+dvsd ISO/IEC 61834
+dvcpro25 SMPTE-314M 25Mb
+dvcpro50 SMPTE-314M 50Mb
+
+<------Jetsen H264 Encoder------>
+H264 High Profile(平衡)
+H264 High Profile(质量)
+H264 High Profile(速度)
+H264 Main Profile(平衡)
+H264 Main Profile(质量)
+H264 Main Profile(速度)
+
+<------H.264/AVC Encoder------>
+HIGH Profile
+Similar MPEG-2 ISO/IEC 13818-1/2
+Similar MPEG-2 DVD/Video
+Similar MPEG-2 SuperVCD
+H264 DVD
+Sony PSP
+Apple iPod
+Apple iPod 640*480
+
+<------MPEG2 I-Frame Encoder------>
+MPEG-I SD 25M~50M
+
+<------MPEG2 Encoder------>
+MPEG-2 ISO/IEC 13818-1/2
+MPEG-2 SuperVCD
+MPEG2 DVD-Video
+DVB
+MPEG2 DVD-VR
+
+<------MPEG2 IMX Encoder------>
+XDCAM IMX(D10) 4:2:2P@ML(30M)
+XDCAM IMX(D10) 4:2:2P@ML(40M)
+XDCAM IMX(D10) 4:2:2P@ML(50M)
+
+<------MPEG1 Encoder------>
+MPEG-1 ISO/IEC 11172-1/2
+MPEG-1 VideoCD
+MPEG-1 DVD-Video
+MPEG-1 DVD-VR
+
+
+<------无压缩编码器------>
+无压缩YUY2
+
+

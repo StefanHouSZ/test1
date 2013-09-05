@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>测试集E-1配置页面</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script language="JavaScript">
+			function onClickHide(DivId)
+			{
+			  if(document.getElementById(DivId).style.display=='')
+			   { document.getElementById(DivId).style.display='none'; }
+			   else
+			   { document.getElementById(DivId).style.display=''; }
+			   
+			}
+	    function onClickHideName()
+             {           
+               var elements = document.getElementsByTagName("div");
+    	         for(var i = 0; i<elements.length; i++){
+		       if(elements[i].getAttribute("name")=="config"){
+			     elements[i].style.display = "none";
+			  }
+             }   
+           }
+		function getReady()
+           {    
+              alert('测试集定制已准备完成！');
+           }  
+		function Finish()
+           {    
+              alert('测试集定制已完成！');
+           }    
+		</script>
+		<link rel="stylesheet" type="text/css" href="CSS/configstyle.css" />
+	</head>
+	<body onload="onClickHideName()">
+		<div id="outer">
+			<div class="orange"></div>
+			<div>
+				<img src="images/back.png" border="0"
+					onclick="javascript:history.back(-1);" title="返回上一页">
+			</div>
+			<div id="location">
+				您当前所在的位置：主页-->测试集列表-->E-1用户管理测试集配置
+			</div>
+			<div id="right">
+			    <h1>
+				    <a href="http://192.168.8.132:10006/Testcase" target="_blank"><img border="0" src="images/testcase.png" />下载原始自动化测试用例 </a>
+				</h1>
+				<h1>
+					用户管理测试集配置
+				</h1>
+				<div class="htimeauth">
+					自动化测试负责人：侯俊光
+				</div>
+				<h2>
+					<button type="button" onclick="onClickHide('config')">
+						显示自动化测试配置页面
+					</button>
+				</h2>
+				<div id="config" name="config">					
+					<p>
+					<form action="http://192.168.8.132:10006/phpfiles/E-1/E-1-config.php" method="post">
+					<h2>第一步：测试过程中是否录制视频？(若想录屏就写为yes，不想则写为no)</h2>
+					<br />
+					<input type="text" name="recordstatus" value="yes/no" />
+					<br />
+                    <br />					
+					<h2>第二步：填写测试责任人及开发责任人邮箱地址（两个地址必须都填写，如果必须只要一方接收邮件，两个邮箱地址可写一致，或保持默认邮箱信息不做修改）</h2>
+					<br />
+					<input type="text" name="testeraddr" value="tester@jetsen.cn"/>
+					<br />
+					<br />
+					<input type="text" name="developeraddr" value="developer@jetsen.cn"/>
+					<br />
+					<br />
+					<h2>第三步，填写自动化测试基本信息</h2>
+					<input type="text" name="testername" value="请在此处填写您的姓名"/>
+					<br />
+					<br />
+					<input type="text" name="reportname" style="width:500px;height:18px" value="请在此处填写HTML报告名，如：自动化测试.html"/>
+					<br />
+					<br />
+					<input type="text" name="reportdescription" style="width:500px;height:18px" value="请在此处填写自动化测试报告题目，如：自定义自动化测试"/>
+					<br />
+					<br />
+					<input type="submit" name="basetestinfo" value="提交基本测试配置"/><br />
+					<br />
+					</form>
+					
+					<form action="http://192.168.8.132:10006/phpfiles/E-1/E-1.php" method="post">
+					<h2>第四步：测试定制准备工作</h2><br />
+                    准备定制：<input type="text" name="prepare" readonly="readonly" value="require 'F:/Jetsen_AutoTest_project/SmartJetsen/Project/E-1_UserManagement/usermanagement-w.rb';require 'F:/Jetsen_AutoTest_project/SmartJetsen/Lib/DebugLog.rb';$debug = DebugLog.new;begin;test = AutoTest.new;test.prepare;" />
+					<input type="button" name="preparebutton" onclick="getReady()" value="准备定制"/><br />
+										
+					<h2>第五步：测试点选择（说明：想测试哪个测试点，就将前面的#号去掉）</h2><br />
+					<textarea style="width:500px;height:300px"  id="autotestscript" name="AutoTestScript" value = "HJG">
+#test.pt1;
+#test.pt2;
+#test.pt3;
+#test.pt4;
+#test.pt5;
+#test.pt6;
+#test.pt7;
+#test.pt8;
+#test.pt9;
+#test.pt10;
+#test.pt11;
+#test.pt12;
+					</textarea><br />
+					
+					<h2>第六步：完成定制设置</h2><br />					
+                    <input type="text" name="finish" readonly="readonly" value="test.finish;rescue;$debug.writedebug('E-1');ensure;$ie.close;$extra.closeRecorder;end" />
+					<input type="button" name="finishbutton" onclick="Finish()" value="完成定制"/><br />
+
+					<h2>第七步：所有配置提交</h2><br />
+					<input type="submit" name="updatesubmit" value="提交设置"/><br />
+					</form>
+					</p>
+					<p>
+					<h1>检查测试配置相关文件是否正确生成（保险起见，请执行这一步，若您按照流程正确执行了前六步操作，在目标路径会生成.rb文件和一个带有基本测试配置信息的xml文件生成，文件名为测试集编号）</h1>
+					<form action="http://192.168.8.132:10006/phpfiles/listfiles.php" method="post">
+					<input type="submit" name="Checkfiles" value="检测测试脚本及配置文件是否已生成"><a>
+					</form>
+					</p>
+					<p>
+					<h1>请先提交好配置后再运行测试脚本！</h1>
+					<form action="http://192.168.8.132:10006/phpfiles/E-1/Run-E-1.php" method="post">
+					<input type="submit" name="RunningTest" value="运行测试脚本"><a>
+					</form>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

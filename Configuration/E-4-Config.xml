@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+	<URL>http://192.168.8.27:8081/js46/juum/jnetsystemweb/login.htm</URL>
+	<UserName>hjg</UserName>
+	<PassWord>1</PassWord>
+	<RecordScreen>no</RecordScreen>
+	<AviName>E-4</AviName>
+	<ReportName>E-4角色管理.html</ReportName>
+	<Description>E-4角色管理功能分区自动化摸底测试</Description>
+	<Coder>侯俊光</Coder>
+	<Tester>SmartJetsen测试框架执行</Tester>
+	<TesterMailAddr>tester@jetsen.cn</TesterMailAddr>
+	<DeveloperMailAddr>develepor@jetsen.cn</DeveloperMailAddr>
+	<MailSubject>SmartJetsen测试执行反馈</MailSubject>
+	<MailText>Dear Tester:The testsuite E-4 has already finished,please check the feedback on SmartJestsen webpage,here is the link: http://192.168.11.66:10006/monitor.html  The mail is sent by:Jetsen AutoTest TEAM---We make Testing more smart!</MailText>
+</Config>

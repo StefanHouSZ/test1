@@ -1,0 +1,24 @@
+<html>   
+  <head>
+  <link href="CSS/basestyle.css" rel="stylesheet" type="text/css" media="screen" />  
+  <META http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title>SmartJetsen邮件通知表格</title>   
+  </head>   
+  <body>   
+  <h1>发送邮件</h1>   
+  <form name="form1" method="post" action="phpfiles/sendemail.php">   
+  <table>   
+  <tr><td><b>收件人：</b></td><td><input type="text" name="mailto" size="35" value = "houjunguang@jetsen.cn"/><font color ="red">默认给SmartJetsen自动化测试框架负责人发送邮件，可修改为任何可用的邮箱地址</font></td></tr>   
+  <tr><td><b>主  题：</b></td>   
+  <td><input type="text" name="mailsubject" size="35" /></td></tr>   
+  <tr><td><b>内  容：</b></td>   
+  <td><textarea name="mailbody" cols="50" rows="7" />请在此处填写你的邮件内容</textarea></td>   
+  </tr>   
+  <tr><td colspan="2">   
+  <input type="submit" name="Submit" value="发送邮件" />   
+  </td>   
+  </tr>   
+  </table>   
+  </form>
+  </body>   
+</html>

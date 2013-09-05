@@ -1,0 +1,35 @@
+﻿#encoding: UTF-8
+alltask = namespace :alltask do
+  desc '测试集:A_8 图片文件夹相关测试'
+  task:A_8 do
+  ruby 'F:\Jetsen_AutoTest_project\SmartJetsen\TestSuits\AutoTestCase\A-8\A-8.rb'
+  end
+  
+  desc '测试集:A_9 图片文件夹相关测试'
+  task:A_9 do
+  ruby 'F:\Jetsen_AutoTest_project\SmartJetsen\TestSuits\AutoTestCase\A-9\A-9.rb'
+  end
+
+  desc '测试集:E_1 用户管理相关测试'
+  task:E_1 do
+  ruby 'F:\Jetsen_AutoTest_project\SmartJetsen\TestSuits\AutoTestCase\E-1\E-1.rb'
+  end
+  
+  desc '测试集:E_2 人员管理相关测试'
+  task:E_2 do
+  ruby 'F:\Jetsen_AutoTest_project\SmartJetsen\TestSuits\AutoTestCase\E-2\E-2.rb'
+  end
+  
+  desc '测试集:E_3 分组管理相关测试'
+  task:E_3 do
+  ruby 'F:\Jetsen_AutoTest_project\SmartJetsen\TestSuits\AutoTestCase\E-3\E-3.rb'
+  end
+  
+  desc '测试集:E_4 角色管理相关测试'
+  task:E_4 do
+  ruby 'F:\Jetsen_AutoTest_project\SmartJetsen\TestSuits\AutoTestCase\E-4\E-4.rb'
+  end
+end  
+
+task:new_task => [alltask[:A_8],alltask[:E_1],alltask[:E_2],alltask[:E_3],alltask[:E_4]] do
+end

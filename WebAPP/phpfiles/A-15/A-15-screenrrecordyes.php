@@ -1,0 +1,1 @@
+<html><head><?php$str = $_POST["recordyes"];$filePath = "F:/Jetsen_AutoTest_project/SmartJetsen/RunningTest/USERS/A-15.config";$handle = fopen($filePath, "w");fwrite($handle,$str);fclose($handle);?></head><body><h1>您选择了录屏功能，请求已发送至测试机... ...</h1><div><input type="button" onclick="javascript:history.back(-1);" title="返回上一页" value = "返回上一页"></div></body></html>

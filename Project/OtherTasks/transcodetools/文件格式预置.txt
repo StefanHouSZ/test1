@@ -1,0 +1,5 @@
+﻿open DML AVI
+Matrox MPEG AVI
+Matrox Motion-JPEG AVI
+自动匹配压缩格式
+固定帧大小AVI

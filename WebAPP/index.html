@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>SmartJetsen自动化测试框架</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a>简介</a></li>
+			<li class="current_page_item"><a href="testsuitelist.html">测试集配置</a></li>
+			<li class="current_page_item"><a href="upload.html">自动化测试用例及附件上传</a></li>
+			<li class="current_page_item"><a href="monitor.html">测试结果反馈</a></li>
+			<li class="current_page_item"><a href="pageload.html">页面性能测试</a></li>
+			<li class="current_page_item"><a href="http://192.168.8.132:8080" target= "_blank "> 持续集成平台</a></li>
+			<li class="current_page_item"><a href="http://192.168.8.132:10006/HelpDoc/SmartJetsen帮助文档V2.0.1.chm">自动化测试框架帮助文档下载</a></li>
+			<li class="current_page_item"><a href="http://www.jetsen.com.cn/" target= "_blank ">捷成世纪</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+	<div id="logo">
+		<h1><a>SmartJetsen </a></h1>
+		<h2>捷成世纪深圳技术研究院-产品测试部</a></h2>
+	</div>
+	<hr />
+</div>
+<div id="page">
+	<div id="page-bgtop">
+		<div id="page-bgbtm">
+			<div id="content">
+				<div class="post">
+					<h2 class="title"><a>欢迎来到SmartJetsen的世界 </a></h2>
+					<div class="entry">
+						<p><strong>SmartJetsen</strong>是产品测试部根据B/S架构类产品，结合<a href="http://watir.com/">Ruby+Watir技术</a>的UI层面的自动化测试框架。该框架是一个完全自由开放的Framework，随着技术的提高，我们的SmartJetsen将有机会做的更棒，希望热爱测试的我们能够将她维护下去，在项目中发挥作用。我们的目标是：让测试变的更加“聪明”  </p>
+						<p>SmartJetsen：借鉴了WAT框架，LazyMan框架以及RobotFramework的一些思想，但是由于其他作者做的框架都是面向于门户类或互联网应用类的页面自动化测试，如淘宝，百度，腾讯公司的Web应用前端功能性自动化测试，所以不太适合我们捷成世纪的Web类产品，因此我们做出了自己的框架，只有自己比别人更了解我们需要什么！</p>
+						<p>感谢与收获：首先感谢公司，感谢所有的同事给予鄙人的支持；第一次在工作中这么疯狂和专心地做一件事，走了很多弯路，但是值得，因为对我而言积累了很多前所未有的东西，都是我未来的财富，很希望能够和大家共同探讨，共同提高，也希望自动化测试能够真正在捷成世纪走下去。</p>
+					</div>
+					<div><a href="http://www.51testing.com/?uid-37286-action-viewspace-itemid-3732" target = "_blank"class="links">认识自动化测试</a></div>
+				    </div>
+					<div>
+					<h2 class="title"><a>框架仍需改进的地方</a></h2>
+					<ul>
+					<li><a>1：测试代码的封装仍需要继续考量，因为有些地方的代码复用性不够强</a></li>
+					<li><a>2：配置方式可能还是不够人性化，日后可能会考虑继续优化</a></li>
+					<li><a>3：因为涉及到需要web来呈现整个自动化过程，因此增加了自动化测试负责人员的工作量，需要去维护web相关的代码</a></li>
+					<li><a>4：受限于目前对于公司系统产品的数据结构没有很清楚的了解，因此并没有去尝试数据库层面的自动化测试探索</a></li>
+					<li><a>5：UI层面的自动化测试对环境依赖太强，稍微一有变化，测试的通过率便会受到影响，容错性比较差</a></li>
+					<li><a>6：公司的产品有些业务性非常强，操作复杂度相对较高，因此使用UI层的自动化测试的实现并不容易</a></li>
+					<li><a>7：基本现在的测试脚本属于一种线性模式，因此维护工作可能相对会比较低效</a></li>
+					<li><a>8：个别操作是利用AutoIt来实现的，因此未来的并发处理模式的自动化测试的方式恐怕很难实现</a></li>
+					<li><a>9：作者的能力有限，思路有限，技术有限，而且开发目前不可能对自动化测试有任何技术上的支持，因此现在的产品可测试性并不高</a></li>
+					</ul>
+					</div>
+			</div>
+			<!-- end #content -->
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>负责人信息</h2>
+						<p>作者：侯俊光</p>
+						<p>所属部门：北京捷成世纪科技股份有限公司深圳技术研究院-产品测试部</p>
+						<p>E-mail：houjunguang@jetsen.cn</p>
+						<p>Mobile：13424270436</p>
+					</li>
+					<li>
+						<h2>框架特点 </h2>
+						<ul>
+							<li><a>1：您可以不需要掌握自动化测试代码，只要您会做手工测试</a></li>
+							<li><a>2：采用WEB呈现方式，不需要了解框架内部是如何实现的，更加方便大家使用</a></li>
+							<li><a>3：多种测试信息反馈：HTML测试报告，测试截图，测试监控视频，测试结果统计</a></li>
+							<li><a>4：责任者邮件通知，第一时间反馈测试进度</a></li>
+							<li><a>5：细化测试用例，将测试用例划分为测试集和测试点的概念</a></li>
+							<li><a>6：定制测试执行策略，怎么测试，由您说了算</a></li>
+							<li><a>7：具备了一个简单的异常捕获机制，将测试异常过程中的信息保存在一个Debug.log文件中，方便定位排查</a></li>
+							<li><a>8：目前的配置方式采用使用xml的方式进行，摒弃了原先excel的配置方式</a></li>
+							<li><a>9：具备了一定的辅助脚本生成机制，在一定程度上提高了代码的编写效率</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- end #sidebar -->
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #page -->
+	</div>
+</div>
+<div id="footer-bgcontent">
+	<div id="footer">
+		<p>Copyright (c) 2013 Jetsen Net All rights reserved. Designed by Stefan HOU </p>
+	</div>
+	<!-- end #footer -->
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<------Windows PCM Encoder------>
+Windows PCM 16 bit
+Windows PCM 24 bit
+Windows PCM 32 bit
+
+<------MP3 Lame Encoder------>
+160kbps, 24000Hz stereo
+144kbps, 24000Hz stereo
+128kbps, 24000Hz stereo
+112kbps, 24000Hz stereo
+96kbps, 24000Hz stereo
+80kbps, 24000Hz stereo
+64kbps, 24000Hz stereo
+56kbps, 24000Hz stereo
+48kbps, 24000Hz stereo
+40kbps, 24000Hz stereo
+32kbps, 24000Hz stereo
+24kbps, 24000Hz stereo
+16kbps, 24000Hz stereo
+8kbps, 24000Hz stereo
+320kbps, 48000Hz stereo
+256kbps, 48000Hz stereo
+224kbps, 48000Hz stereo
+192kbps, 48000Hz stereo
+160kbps, 48000Hz stereo
+128kbps, 48000Hz stereo
+112kbps, 48000Hz stereo
+96kbps, 48000Hz stereo
+80kbps, 48000Hz stereo
+64kbps, 48000Hz stereo
+56kbps, 48000Hz stereo
+48kbps, 48000Hz stereo
+40kbps, 48000Hz stereo
+64kbps, 12000Hz stereo
+56kbps, 12000Hz stereo
+48kbps, 12000Hz stereo
+40kbps, 12000Hz stereo
+32kbps, 12000Hz stereo
+24kbps, 12000Hz stereo
+16kbps, 12000Hz stereo
+8kbps, 12000Hz stereo

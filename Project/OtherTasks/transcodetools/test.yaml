@@ -1,0 +1,4 @@
+﻿program:
+   id: 1
+   input: 1 2
+   output: 3

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>测试结果反馈</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script language="JavaScript">
+			function onClickHide(DivId)
+			{
+			  if(document.getElementById(DivId).style.display=='')
+			   { document.getElementById(DivId).style.display='none'; }
+			   else
+			   { document.getElementById(DivId).style.display=''; }
+			   
+			}
+	    function onClickHideName()
+             {           
+               var elements = document.getElementsByTagName("div");
+    	         for(var i = 0; i<elements.length; i++){
+		       if(elements[i].getAttribute("name")=="feedback"){
+			     elements[i].style.display = "none";
+			  }
+             }   
+           }
+		</script>
+		<link rel="stylesheet" type="text/css" href="CSS/monitorstyle.css" />
+	</head>
+	<body onload="onClickHideName()">
+		<div id="outer">
+			<div class="orange"></div>
+			<div>
+				<img src="images/back.png" border="0"
+					onclick="javascript:history.back(-1);" title="返回上一页">
+			</div>
+			<div id="location">
+				您当前所在的位置：主页-->测试结果反馈
+			</div>
+			<div>
+				<font color=red>注意：只有当您收到了SmartJetsen发来的邮件后才能够获得完整的自动化测试反馈信息</font>
+			</div>
+			<!--测试集编号列表-->
+			<div id="right">
+			  <h1>
+					测试集编号信息，方便您找到自己需要的测试结果反馈信息
+			  </h1>
+			  <p>
+			    <table border="1">
+				  <tr>
+                    <th>测试集编号</th>
+                    <th>测试集描述</th>
+                  </tr>
+				  <tr>
+                    <td>A-15</td>
+                    <td>编目导入导出测试集</td>
+                  </tr>
+                  <tr>
+                    <td>C-1</td>
+                    <td>用户管理测试集</td>
+                  </tr>
+				</table>
+			  </p>
+			</div>
+			<!--测试日志及测试结果统计-->
+			<div id="right">
+				<h1>
+					测试日志、测试附件及结果统计
+				</h1>
+				<div class="htimeauth">
+					自动化测试负责人：侯俊光
+				</div>
+				<h2>
+					<button type="button" onclick="onClickHide('feedback1')">
+						显示测试信息反馈页面
+					</button>
+				</h2>
+				<div id="feedback1" name="feedback">					
+					<p>
+						<a>测试日志：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						<a href="http://192.168.8.132:10006/TestLog/TestResult.log" target= "_blank ">
+							<img border="0" src="images/log.png" /> </a>
+					</p>
+					<p>
+						<a>Debug日志：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						<a href="http://192.168.8.132:10006/Debug/DebugLog.log" target= "_blank ">
+							<img border="0" src="images/debug.png" /> </a>
+					</p>
+					<p>
+						<a>测试附件：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						<a href="http://192.168.8.132:10006/Attachments" target= "_blank ">
+							<img border="0" src="images/Attachments.png" /> </a>
+					</p>
+					<p>
+						<a>测试结果统计：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						<a href="http://192.168.8.132:10006/phpfiles/statistic.php">
+							<img border="0" src="images/statistic.png" /> </a>
+					</p>
+				</div>
+			</div>
+			<!--测试信息反馈-->
+			<div id="right">
+				<div class="htimeauth">
+					<h1>自动化测试结果反馈列表</h1>
+				</div>
+				<h2>
+					<button type="button" onclick="onClickHide('feedback2')">
+						显示测试信息反馈页面
+					</button>
+				</h2>
+				<div id="feedback2" name="feedback">
+					<p>
+						<a>HTML测试报告：&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						<a href="http://192.168.8.132:10006/TestReport" target= "_blank ">
+							<img border="0" src="images/html.png" /> </a>
+					</p>
+					<p>
+						<a>测试截图：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						<a href="http://192.168.8.132:10006/TestPicture" target= "_blank ">
+							<img border="0" src="images/picture.png" /> </a>
+					</p>
+					<p>
+						<a>测试录屏：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						<a href="http://192.168.8.132:10006/TestVideo/" target= "_blank ">
+							<img border="0" src="images/video.png" /> </a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

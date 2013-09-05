@@ -1,0 +1,10 @@
+﻿Apple YUV 8bit Encoder
+Apple YUV 10bit Encoder
+Dv Encoder
+Jetsen H264 Encoder
+H.264/AVC Encoder
+MPEG2 I-Frame Encoder
+MPEG2 Encoder
+MPEG2 IMX ENCODER
+MPEG1 Encoder
+无压缩解码器

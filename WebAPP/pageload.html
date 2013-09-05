@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>页面性能测试</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script language="JavaScript">
+			function onClickHide(DivId)
+			{
+			  if(document.getElementById(DivId).style.display=='')
+			   { document.getElementById(DivId).style.display='none'; }
+			   else
+			   { document.getElementById(DivId).style.display=''; }
+			   
+			}
+	    function onClickHideName()
+             {           
+               var elements = document.getElementsByTagName("div");
+    	         for(var i = 0; i<elements.length; i++){
+		       if(elements[i].getAttribute("name")=="pageload"){
+			     elements[i].style.display = "none";
+			  }
+             }   
+           }
+		</script>
+		<link rel="stylesheet" type="text/css" href="CSS/monitorstyle.css" />
+	</head>
+	<body onload="onClickHideName()">
+		<div id="outer">
+			<div class="orange"></div>
+			<div>
+				<img src="images/back.png" border="0"
+					onclick="javascript:history.back(-1);" title="返回上一页">
+			</div>
+			<div id="location">
+				您当前所在的位置：主页-->页面性能测试
+			</div>
+			<!--已完成的性能测试页面列表-->
+			<div id="right">
+			  <h1>
+			       初始化性能测试环境
+			  </h1>
+			  <div>
+						<a href="./phpfiles/Pageload/DeletePerformanceData.php" target= "_blank ">
+							<img border="0" src="images/iniperformance_48.png" title="初始化性能测试环境" />点击图标完成对自动化测试机性能测试环境的初始化 </a>
+			  </div>
+			  <br />			
+			  <h1>
+					以下是已经准备好的页面性能测试列表
+			  </h1>
+			  <p>
+			    <table border="1">
+				  <tr>
+                    <th>页面区域位置编号（规则同测试集编号）</th>
+                    <th>页面区域描述</th>
+                  </tr>
+				  <tr>
+                    <td>A-1</td>
+                    <td>媒体内容管理-->网管系统</td>
+                  </tr>
+				  <tr>
+                    <td>A-2</td>
+                    <td>媒体内容管理-->统计报表</td>
+                  </tr>
+				  <tr>
+                    <td>A-3</td>
+                    <td>媒体内容管理-->节目编排</td>
+                  </tr>
+				  <tr>
+                    <td>A-4</td>
+                    <td>媒体内容管理-->主题资料库</td>
+                  </tr>
+				  <tr>
+                    <td>A-5</td>
+                    <td>媒体内容管理-->我的工作夹</td>
+                  </tr>
+				  <tr>
+                    <td>A-6</td>
+                    <td>媒体内容管理-->磁带管理系统(此版本已删除)</td>
+                  </tr>
+				  <tr>
+                    <td>A-7</td>
+                    <td>媒体内容管理-->音频工作夹</td>
+                  </tr>
+				  <tr>
+                    <td>A-8</td>
+                    <td>媒体内容管理-->视频工作夹</td>
+                  </tr>
+				  <tr>
+                    <td>A-9</td>
+                    <td>媒体内容管理-->图片工作夹</td>
+                  </tr>
+				  <tr>
+                    <td>A-10</td>
+                    <td>媒体内容管理-->文稿工作夹</td>
+                  </tr>
+				  <tr>
+                    <td>A-11</td>
+                    <td>媒体内容管理-->音频集合工作夹</td>
+                  </tr>
+				  <tr>
+                    <td>A-12</td>
+                    <td>媒体内容管理-->视频集合工作夹</td>
+                  </tr>
+				  <tr>
+                    <td>A-13</td>
+                    <td>媒体内容管理-->其他链接（包括：音视频集合管理；检索系统（集合）；编目导入导出；节目导入导出；检索系统；视频检索系统；
+					内容发布；下载审核；存储管理）</td>
+                  </tr>
+				</table>
+			  </p>
+			</div>
+			<!--具体的页面性能测试列表项-->
+			<div id="right">
+				<h1>
+					性能测试列表：媒体内容管理
+				</h1>
+				<div class="htimeauth">
+					自动化测试负责人：侯俊光
+				</div>
+				<h2>
+					<button type="button" onclick="onClickHide('pageload1')">
+						显示性能测试列表一
+					</button>
+				</h2>
+				<div id="pageload1" name="pageload">					
+					<p> 					  
+					  <form action="phpfiles/Pageload/A-1.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-1网管系统<a>
+					  </form>
+					  <form action="phpfiles/Pageload/A-2.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-2统计报表<a>
+					  </form>
+					  <form action="phpfiles/Pageload/A-3.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-3节目编排<a>
+					  </form>
+					  <form action="phpfiles/Pageload/A-4.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-4主题资料库<a>
+					  </form>
+					  <form action="phpfiles/Pageload/A-5.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-5我的工作夹<a>
+					  </form>
+					  <form action="" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-6磁带管理系统（此版本已删除，不能用）<a>
+					  </form>
+					  <form action="phpfiles/Pageload/A-7.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-7音频工作夹<a>
+					  </form>
+					  <form action="phpfiles/Pageload/A-8.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-8视频工作夹<a>
+					  </form>
+					  <form action="phpfiles/Pageload/A-9.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-9图片工作夹<a>
+					  </form>
+					  <form action="phpfiles/Pageload/A-10.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-10文稿工作夹<a>
+					  </form>
+					  <form action="phpfiles/Pageload/A-11.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-11音频集合工作夹<a>
+					  </form>
+					  <form action="phpfiles/Pageload/A-12.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-12视频集合工作夹<a>
+					  </form>
+					  <form action="phpfiles/Pageload/A-13.php" method="post">
+						<input name="submit" type="image" src = "images/Pageload.png">A-13其他链接<a>
+					  </form>
+					</p>
+				</div>
+			</div>
+			<!--测试信息反馈-->
+			<div id="right">
+			    <h1>
+				    性能测试列表：互联互通平台
+				</h1>
+				<div class="htimeauth">
+					<h1>自动化测试结果反馈列表</h1>
+				</div>
+				<h2>
+					<button type="button" onclick="onClickHide('pageload2')">
+						显示性能测试列表二
+					</button>
+				</h2>
+				<div id="pageload2" name="pageload">
+					<p>
+						<form action="phpfiles/Pageload/A-1.php" method="post">
+						  <input name="submit" type="image" src = "images/Pageload.png" target="_blank">A-1网管系统<a>
+					    </form>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
